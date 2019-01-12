@@ -10,20 +10,23 @@ class Frame(wx.Frame):
     def __init__(self,parent,id):
         wx.Frame.__init__(self,parent,id,title='爱尚花艺营销管理系统',pos=(135,25),size=(1024,700))   #窗口定义
         icon = wx.Icon('..\images\ishy.ico', wx.BITMAP_TYPE_ICO)
-        self.SetIcon(icon) #设置Frame标题的图标
-        panel = wx.Panel(self)  #创建画板容器
-        #########################################
-        self.menubar = wx.MenuBar()
-        self.menuNew = wx.Menu()
-        self.menubar.Append(self.menuNew,'商品')
-        self.menuitem1 = wx.MenuItem(id=wx.NewId(),text='新建')
-        self.menuNew.Append(self.menuitem1)
-        self.SetMenuBar(self.menubar)
-        #########################################
-    
-    def hi(self,event):
-        print('Hello')
-    
+        self.SetIcon(icon)      #设置Frame标题的图标
+        panel = wx.Panel(self)      #创建画板容器
+        self.menubar = wx.MenuBar()     #新建菜单栏
+        self.menu1 = wx.Menu()      #新建菜单1
+        self.menubar.Append(self.menu1,'商品')        #将menu1加入菜单栏并命名
+        self.menuitem11 = wx.MenuItem(id=-1,text='新建')      #新建一个menuitem11命名为新建
+        self.menu1.Append(self.menuitem11)      #将menuitem11加入menu1
+        self.menu1.AppendSeparator()
+        self.menuitem12 =wx.MenuItem(id=-1,text='打开')
+        self.menu1.Append(self.menuitem12)
+        self.menu1.AppendSeparator()
+        self.menuitem13 =wx.MenuItem(id=-1,text='另存为')
+        self.menu1.Append(self.menuitem13)
+        self.menu1.AppendSeparator()
+        self.SetMenuBar(self.menubar)   #将菜单栏加入窗口
+        
+
 while True:
     if message == '登录成功':
         app = wx.App()          
