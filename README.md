@@ -1,6 +1,7 @@
 # Ashy
-我的Python营销管理系统
+My New Python File
 ###2019.1.12
 alpha 0.0.1
 Sign in window,Main window,and some Menu
+[滑稽]
 ###End
