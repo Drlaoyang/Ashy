@@ -1,16 +1,23 @@
+#!/usr/bin/python
 # -*- coding:utf-8 -*-
 
 import Login
+
 import wx
+import sqlite3
+
 from Login import message       #导入Login包里的message变量
 
 Login       #调用登录界面
+
+connect = sqlite3.connect("../databases/database01.db")
+cursor = connect.cursor()
 
 class Frame(wx.Frame):
 	def __init__(self,parent,id):
 		wx.Frame.__init__(self,parent,id,title='爱尚花艺营销管理系统',pos=(135,25),size=(1024,700))   #窗口定义
 
-		icon = wx.Icon('..\\images\\ishy.ico', wx.BITMAP_TYPE_ICO)
+		icon = wx.Icon('../images/ishy.ico', wx.BITMAP_TYPE_ICO)
 		self.SetIcon(icon)      #设置Frame标题的图标
 
 		panel = wx.Panel(self)      #创建画板容器
@@ -48,7 +55,7 @@ class Frame(wx.Frame):
 		self.menu2.Append(self.menuitem23)      #将menuitem23加入menu1
 
 		self.SetMenuBar(self.menubar)   #将菜单栏加入窗口
-		
+
 
 while True:
 	if message == '登录成功':
