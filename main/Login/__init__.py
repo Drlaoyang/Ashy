@@ -1,4 +1,6 @@
+#!/usr/bin/python
 # -*- coding:utf-8 -*-
+
 import wx
 
 message = ""
@@ -6,7 +8,7 @@ message = ""
 class Frame(wx.Frame):
 	def __init__(self,parent,id):
 		wx.Frame.__init__(self,parent,id,title='爱尚花艺营销管理系统',pos=(450,200))
-		icon = wx.Icon('..\\images\\ishy.ico', wx.BITMAP_TYPE_ICO)
+		icon = wx.Icon('../images/ishy.ico', wx.BITMAP_TYPE_ICO)
 		self.SetIcon(icon) #设置Frame标题的图标
 		panel = wx.Panel(self)
 		
