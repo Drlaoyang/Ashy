@@ -1,4 +1,5 @@
 #Eclipse
+*.settings
 *.project
 *.pydevproject
 # Byte-compiled / optimized / DLL files
