@@ -9,6 +9,6 @@ fix the IDE bug,like sublime cannot use the "main.py" and "Login"
 End
 2019.1.25    
 alpha 0.0.2    
-Bind something, like print('Hello World')
-Add the sqlite database, main database's name is datasase01.db
-End
+Bind something, like print('Hello World') # ohhh    
+Add the sqlite database, main database's name is datasase01.db   
+End   
