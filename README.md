@@ -6,7 +6,7 @@ My New Python File
 alpha 0.0.1    
 Sign in window,Main window,and some Menu    
 fix the IDE bug,like sublime cannot use the "main.py" and "Login"    
-End
+End    
 2019.1.25    
 alpha 0.0.2    
 Bind something, like print('Hello World') # ohhh    
