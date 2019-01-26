@@ -1,0 +1,1 @@
+sqlite3 database01.db < database01.sql
