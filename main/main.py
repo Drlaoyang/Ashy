@@ -1,7 +1,5 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
-import sys
-sys.path.append("../lib/")
 import MenuLib
 import Login
 import wx
