@@ -45,10 +45,9 @@ class Frame(wx.Frame):
 		self.SetMenuBar(self.menubar)   #将菜单栏加入窗口
 
 
-while True:
-	if message == '登录成功':
-		app = wx.App()          
-		frame = Frame(parent=None,id=-1)            
-		frame.Show()            
-		app.MainLoop()
-	break
+
+if message == '登录成功':
+	app = wx.App()          
+	frame = Frame(parent=None,id=-1)            
+	frame.Show()            
+	app.MainLoop()
