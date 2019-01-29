@@ -10,15 +10,9 @@ Login       #调用登录界面
 class Frame(wx.Frame):
     def __init__(self,parent,id):
         wx.Frame.__init__(self,parent,id,title='爱尚花艺营销管理系统',pos=(135,25),size=(1024,700))   #窗口定义
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         icon = wx.Icon('./images/ishy.ico', wx.BITMAP_TYPE_ICO)
-=======
-        icon = wx.Icon('../images/ishy.ico', wx.BITMAP_TYPE_ICO)
->>>>>>> 13d82ec7c60eccc3eebe9571f5b36d7fc65645c7
-=======
-        icon = wx.Icon('../images/ishy.ico', wx.BITMAP_TYPE_ICO)
->>>>>>> 13d82ec7c60eccc3eebe9571f5b36d7fc65645c7
+
         self.SetIcon(icon)      #设置Frame标题的图标
         panel = wx.Panel(self)      #创建画板容器
         self.menubar = wx.MenuBar()     #新建菜单栏
@@ -52,9 +46,6 @@ class Frame(wx.Frame):
 
         self.SetMenuBar(self.menubar)   #将菜单栏加入窗口
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 while True:
     if message == '登录成功':
         app = wx.App()          
@@ -62,16 +53,3 @@ while True:
         frame.Show()            
         app.MainLoop()
     break
-=======
-=======
->>>>>>> 13d82ec7c60eccc3eebe9571f5b36d7fc65645c7
-
-if message == '登录成功':
-    app = wx.App()          
-    frame = Frame(parent=None,id=-1)            
-    frame.Show()            
-    app.MainLoop()
-<<<<<<< HEAD
->>>>>>> 13d82ec7c60eccc3eebe9571f5b36d7fc65645c7
-=======
->>>>>>> 13d82ec7c60eccc3eebe9571f5b36d7fc65645c7
