@@ -24,4 +24,4 @@ End
 2019.1.29	
 alpha 0.0.4		
 Big update!
-Add Inno Setup script, and setup exe.
+Add Inno Setup script, and setup execuatable files.
