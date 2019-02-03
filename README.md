@@ -15,13 +15,13 @@ Bind something, like print('Hello World'). # ohhh
 Add the sqlite database, main database's name is datasase01.db.   
 End   
 	
-2019.1.26		
-alpha 0.0.3		
-Big update!		
-Add the Embedded sqlite3,and some cmd,like opendatabase01.	
+2019.1.26		   
+alpha 0.0.3	 	     
+Big update!	         	
+Add the Embedded sqlite3,and some cmd,like opendatabase01.	      
 End			
 	
-2019.1.29	
-alpha 0.0.4		
-Big update!
-Add Inno Setup script, and setup execuatable files.
+2019.1.29	       
+alpha 0.0.4		         
+Big update!                         
+Add Inno Setup script, and setup execuatable files.                         
