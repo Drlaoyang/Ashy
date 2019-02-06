@@ -74,6 +74,3 @@ if True:
     frame = Frame(parent=None, id=-1)
     frame.Show()
     app.MainLoop()
-ame = Frame(parent=None, id=-1)
-frame.Show()
-app.MainLoop()
