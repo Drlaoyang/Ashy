@@ -2,7 +2,6 @@
 .idea/
 #Eclipse
 .settings/
-*.settings
 *.project
 *.pydevproject
 # Byte-compiled / optimized / DLL files
