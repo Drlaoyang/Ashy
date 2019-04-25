@@ -1,1 +1,0 @@
-sqlite3 database01.db .dump > database01.sql
