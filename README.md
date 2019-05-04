@@ -2,6 +2,9 @@
 
 # Ashy
 My New Python File    
+    
+2019.5.4    
+New website(in china):https://gitee.com/Drlaoyang/Ashy  
 
 2019.4.28    
 Redo.  
