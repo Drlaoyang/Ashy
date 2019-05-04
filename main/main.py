@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#! /usr/bin/python3
 # -*- coding:utf-8 -*-
 import MenuLib
 import Login
@@ -11,7 +11,7 @@ class Frame(wx.Frame):
     def __init__(self,parent,id):
         wx.Frame.__init__(self,parent,id,title='爱尚花艺营销管理系统',pos=(135,25),size=(1024,700))   #窗口定义
 
-        icon = wx.Icon('./images/ishy.ico', wx.BITMAP_TYPE_ICO)
+        icon = wx.Icon('../src/images/ishy.ico', wx.BITMAP_TYPE_ICO)
 
         self.SetIcon(icon)      #设置Frame标题的图标
         panel = wx.Panel(self)      #创建画板容器
