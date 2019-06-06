@@ -8,7 +8,10 @@ message = ""
 
 class Frame(wx.Frame):
     def __init__(self, parent, id):
-        wx.Frame.__init__(self, parent, id, title='爱尚花艺营销管理系统', pos=(450, 200),size=(300,200))
+        wx.Frame.__init__(
+            self, parent, id, title='爱尚花艺营销管理系统', pos=(
+                450, 200), size=(
+                300, 200))
         icon = wx.Icon('../src/images/ishy.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(icon)  # 设置Frame标题的图标
         panel = wx.Panel(self)
@@ -47,7 +50,7 @@ class Frame(wx.Frame):
 
         panel.SetSizer(v_all)
 
-    def OnclickSubmit(self, event):
+    def OnclickSubmit(self, event):  # 设置点击确定事件
         global message
         username = self.text_user.GetValue()
         password = self.text_pwd.GetValue()
@@ -64,7 +67,7 @@ class Frame(wx.Frame):
         else:
             wx.MessageBox(message)
 
-    def OnclickCancel(self, event):
+    def OnclickCancel(self, event):  # 设置点击取消事件
         self.text_user.SetValue('')
         self.text_pwd.SetValue('')
 
