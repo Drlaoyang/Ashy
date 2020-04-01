@@ -1,11 +1,8 @@
 #! /usr/bin/python3
 # -*- coding:utf-8 -*-
 import MenuLib
-import Login
 import wx
-from Login import message  # 导入Login包里的message变量
-
-Login  # 调用登录界面
+# Login  # 调用登录界面
 
 
 class Frame(wx.Frame):
@@ -50,11 +47,10 @@ class Frame(wx.Frame):
 
         self.SetMenuBar(self.menubar)  # 将菜单栏加入窗口
 
-
-while True:
-    if message == '登录成功':
-        app = wx.App()
-        frame = Frame(parent=None, id=-1)
-        frame.Show()
-        app.MainLoop()
-    break
+    def ShowMain():
+        if True:
+            app = wx.App()
+            frame = Frame(parent=None, id=-1)
+            frame.Show()
+            app.MainLoop()
+# Frame.ShowMain()

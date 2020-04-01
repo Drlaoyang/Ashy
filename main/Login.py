@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 
 import wx
+import main
 
 message = ""
 
@@ -57,13 +58,12 @@ class Frame(wx.Frame):
         if username == "" or password == "":
             message = "用户名或密码不能为空"
         elif username == 'lm' and password == '111':
-            message = '登录成功'
+            frame.Close()
+            main.Frame.ShowMain()
         else:
             message = '用户名或密码错误'
         if message == '登录成功':
             wx.MessageBox(message)
-            wx.MessageBox('储存登录信息成功')
-            wx.MessageBox('(确定后点右上角X)')
         else:
             wx.MessageBox(message)
 
